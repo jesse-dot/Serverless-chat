@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverless Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Conversations</h2>
+                <button id="newChatBtn" class="btn-new-chat" title="New Conversation">+</button>
+            </div>
+            <div id="conversationList" class="conversation-list"></div>
+            <div class="sidebar-footer">
+                <button id="clearAllBtn" class="btn-clear">Clear All</button>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-title-container">
+                    <h1 id="chatTitle">Serverless Chat</h1>
+                    <button id="editTitleBtn" class="btn-edit-title" title="Edit conversation title">✎</button>
+                </div>
+                <button id="deleteChatBtn" class="btn-delete" title="Delete conversation">🗑</button>
+            </div>
+            <div id="chatMessages" class="chat-messages"></div>
+            <div class="chat-input-container">
+                <textarea id="messageInput" class="message-input" placeholder="Type your message here..." rows="1"></textarea>
+                <button id="sendBtn" class="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
